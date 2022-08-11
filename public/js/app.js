@@ -17,7 +17,7 @@ fetch('http://puzzle.mead.io/puzzle').then((responce) => {
 //     });
 // });
 const address = (address) => {
-    fetch('http://localhost:3000/weather?address=' + address).then((responce) => {
+    fetch('/weather?address=' + address).then((responce) => {
         responce.json().then((data) => {
             if (data.error){
                 console.log(data.error);
